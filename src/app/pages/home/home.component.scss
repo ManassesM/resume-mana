@@ -1,8 +1,63 @@
 @import "../../../styles.scss";
 
+.home {
+  background-color: $header-bg;
+  position: relative;
+  height: 100%;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-image: url("../../../assets/programming.jpg");
+    background-size: cover;
+    opacity: 0.5;
+  }
+
+  .wrapper {
+    color: aliceblue;
+    position: relative;
+    padding: 40px;
+    width: 50%;
+    h1 {
+      text-shadow: 2px 2px 4px #000000;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      background-color: $header-bg;
+      //   border-radius: 10px;
+      padding: 10px;
+      font-size: 20px;
+    }
+  }
+}
+
 @media (max-width: 700px) {
   .home {
     height: 100%;
     background-color: $main-bg;
+    &::before {
+      background-image: none;
+    }
+
+    .wrapper {
+      width: 100%;
+      padding-top: 140px;
+      text-align: center;
+
+      h1 {
+        text-shadow: 0px 0px 0px #000000;
+        font-size: 26px;
+        letter-spacing: 5px;
+        margin-bottom: 40px;
+      }
+    }
   }
 }
