@@ -1,0 +1,14 @@
+@import "../..//../styles.scss";
+
+.contact {
+  //   position: fixed;
+  //   width: 80%;
+  //   right: 0;
+}
+
+@media (max-width: 700px) {
+  .contact {
+    height: 100%;
+    background-color: $header-bg;
+  }
+}

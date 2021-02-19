@@ -1,0 +1,8 @@
+@import "../../../styles.scss";
+
+@media (max-width: 700px) {
+  .home {
+    height: 100%;
+    background-color: $main-bg;
+  }
+}

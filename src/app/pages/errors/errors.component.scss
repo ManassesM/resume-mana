@@ -1,0 +1,30 @@
+@import "../../../styles.scss";
+
+.error {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+
+  font-size: 50px;
+  text-align: center;
+
+  .return {
+    margin-top: 20px;
+
+    a {
+      //   background-color: $header-bg;
+
+      color: #ff8a8a;
+
+      padding: 10px 15px;
+      border-radius: 30px;
+
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: #ff6262;
+      }
+    }
+  }
+}
