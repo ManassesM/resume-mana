@@ -1,0 +1,50 @@
+@import "../../../styles.scss";
+
+.goals {
+  height: 100%;
+  padding: 20px 40px;
+
+  .main {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  section {
+    background-color: $header-bg;
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    .title {
+      margin-bottom: 5px;
+      font-size: 22px;
+      font-weight: bold;
+      p {
+        color: $white;
+      }
+    }
+
+    .description {
+      line-height: 25px;
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: $link;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: $link-hover;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .goals {
+    display: none;
+  }
+}

@@ -1,0 +1,68 @@
+@import "../../../styles.scss";
+
+.skills {
+  padding: 20px 0px 20px 40px;
+  .main {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 0;
+
+    .card {
+      margin-bottom: 15px;
+      width: 450px;
+      height: 100px;
+
+      .title {
+        margin-bottom: 5px;
+        font-size: 22px;
+      }
+
+      .description {
+        // background-color: $header-bg-light;
+
+        .inner {
+          width: 450px;
+          height: 100px;
+          padding: 10px;
+
+          background-color: $header-bg;
+          clip-path: circle(8% at 6% 30%);
+          transition: all 0.4s ease-in;
+
+          span {
+            float: left;
+            height: 100%;
+            // font-weight: bold;
+            padding: 12px 25px 10px 15px;
+            transition: all 0.4s ease-in;
+          }
+
+          &:hover span {
+            color: rgba($color: #000000, $alpha: 0);
+            // float: right;
+          }
+
+          &:hover {
+            // clip-path: ellipse(450px 100px at 50% 50%);
+            clip-path: circle(100%);
+          }
+        }
+        p {
+          font-size: 13px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .skills {
+    display: none;
+  }
+}
