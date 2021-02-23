@@ -12,6 +12,7 @@ import { SkillsComponent } from './pages/skills/skills.component';
 
 const routes: Routes = [
   { path: '', component: AppComponent, children: [
+    { path: '', redirectTo: '/home', pathMatch: 'full'},
     { path: 'home', component: HomeComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'goals', component: GoalsComponent },
